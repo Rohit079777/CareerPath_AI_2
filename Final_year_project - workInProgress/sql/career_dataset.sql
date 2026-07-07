@@ -1,9 +1,9 @@
-CREATE TABLE careers (
+CREATE TABLE IF NOT EXISTS careers (
     career_id SERIAL PRIMARY KEY,
-    career_name VARCHAR(100) NOT NULL,
+    career VARCHAR(100) NOT NULL,
     required_skills TEXT NOT NULL,
+    image TEXT,
     description TEXT,
-    salary VARCHAR(50),
     learn_link TEXT,
-    image_url TEXT
+    salary VARCHAR(50)
 );
